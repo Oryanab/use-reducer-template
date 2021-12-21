@@ -3,7 +3,7 @@ import mainContext from "./main-context";
 import { mainReducer } from "../reducers/mainReducer";
 import { listOfFriends } from "../data/listOfFriends";
 const MainState = (props) => {
-  const [friends, dispatch] = useReducer(mainReducer, listOfFriends);
+  const [friends, dispatch] = useReducer(mainReducer, [...listOfFriends]);
   return (
     <mainContext.Provider
       value={{

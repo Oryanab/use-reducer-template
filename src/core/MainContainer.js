@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import MainState from "../context/mainState";
-
-import Child from "./Components/Child";
+import List from "./Components/List";
+import From from "./Components/From";
 
 export default function MainContainer() {
   return (
-    <div>
+    <div className="main-div">
       <MainState>
-        <Child />
+        <From />
+        <hr />
+        <List />
       </MainState>
     </div>
   );
