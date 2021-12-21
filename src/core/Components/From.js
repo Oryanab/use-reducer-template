@@ -49,6 +49,9 @@ export default function From() {
               payload: { name: name, age: age },
             });
           }
+
+          setAge("");
+          setName("");
         }}
       >
         ADD/UPDATE
